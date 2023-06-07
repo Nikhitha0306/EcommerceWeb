@@ -31,6 +31,7 @@ namespace EcommerceWeb.StepDefinitions
         [Given(@"I add four random items to my cart")]
         public void GivenIAddFourRandomItemsToMyCart()
         {
+            //Add four random products to the cart 
             productsOnPage = objects.getProducts();
             loops.AddFourRandomItemsToCart(productsOnPage.ToList());
         }
