@@ -17,7 +17,7 @@ namespace EcommerceWeb.POM
         public Loops(IWebDriver driver)
         {
             this.driver = driver;
-            PageFactory.InitElements(driver, this);
+            //PageFactory.InitElements(driver, this);
         }
 
         public void AddFourRandomItemsToCart(List<IWebElement> productsOnPage)

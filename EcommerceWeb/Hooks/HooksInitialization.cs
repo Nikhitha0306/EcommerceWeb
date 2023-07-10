@@ -35,7 +35,7 @@ namespace EcommerceWeb.Hooks
         [AfterScenario]
         public void AfterScenario()
         {
-            var driver = _container.Resolve<IWebDriver>();
+           var driver = _container.Resolve<IWebDriver>();
             if (driver != null)
             {
                 driver.Quit();
